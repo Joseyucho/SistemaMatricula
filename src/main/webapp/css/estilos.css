@@ -1,0 +1,126 @@
+:root {
+    --azul: #1e3a8a;
+    --azul-claro: #3b82f6;
+    --dorado: #f59e0b;
+    --fondo-gris: #f8fafc;
+    --texto-oscuro: #1e293b;
+}
+
+/* --- ESTILOS GLOBALES --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo-gris);
+    color: var(--texto-oscuro);
+}
+
+/* --- NAVBAR --- */
+.navbar-colegio {
+    background: linear-gradient(90deg, var(--azul), var(--azul-claro));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0.8rem 1.5rem;
+}
+
+.navbar-colegio .navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-colegio .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-colegio .nav-link:hover {
+    color: #e2e8f0 !important;
+    transform: translateY(-1px);
+}
+
+/* --- BOTONES DEL NAVBAR (Opcional si usas Bootstrap) --- */
+.navbar-colegio .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.navbar-colegio .btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--azul) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- TARJETAS DEL DASHBOARD --- */
+.card-dashboard {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-dashboard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- BADGE DE ROL --- */
+.badge-rol {
+    background: var(--dorado);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 6px rgba(245, 158, 11, 0.4);
+    display: inline-block;
+}
+
+/* --- TABLAS --- */
+.table-colegio thead {
+    background: var(--azul);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* --- LOGIN --- */
+.login-card {
+    max-width: 420px;
+    margin: 80px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border: none;
+}
+
+.login-header {
+    background: linear-gradient(135deg, var(--azul), var(--azul-claro));
+    color: #fff;
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.login-header h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* --- ALERTAS (MORA) --- */
+.alerta-mora {
+    background: #fee2e2;
+    border-left: 5px solid #dc2626;
+    color: #7f1d1d;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
